@@ -14,6 +14,8 @@ public class DateSrv extends GenericServlet
 		Date d=new Date();
 		//write output as response
 		pw.println("<b><i><h1>Date & Time" +d+ "</b></i></h1>");
+		pw.println("<b><i><h1>Date & Time 1" +d+ "</b></i></h1>");
+		pw.println("<b><i><h1>Date & Time 2" +d+ "</b></i></h1>");
 			//close stream 
 		pw.close();
 	}//main
