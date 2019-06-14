@@ -1,0 +1,20 @@
+package com.ds;
+import javax.servlet.*;
+import java.io.*;
+import java.util.*;
+public class DateSrv extends GenericServlet 
+{
+	public void service(ServletRequest req, ServletResponse res)throws ServletException, IOException 
+	{
+		//get printWriter obj
+		PrintWriter pw=res.getWriter();
+		//set response content type
+		res.setContentType("text/html");
+		//write req proceesing logic to genterate output
+		Date d=new Date();
+		//write output as response
+		pw.println("<b><i><h1>Date and Time" +d+ "</b></i></h1>");
+			//close stream 
+		pw.close();
+	}//main
+}//class

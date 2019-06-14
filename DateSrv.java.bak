@@ -13,7 +13,7 @@ public class DateSrv extends GenericServlet
 		//write req proceesing logic to genterate output
 		Date d=new Date();
 		//write output as response
-		pw.println("<b><i><h1>Date and Time" +d+ "</b></i></h1>");
+		pw.println("<b><i><h1>Date & Time" +d+ "</b></i></h1>");
 			//close stream 
 		pw.close();
 	}//main
